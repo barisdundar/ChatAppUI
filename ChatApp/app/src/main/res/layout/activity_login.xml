@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <include layout="@layout/actionbar_app"
+        android:id="@+id/actionbar_login"></include>
+
+
+    <TextView
+        android:id="@+id/txtInfo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/actionbar_login"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:text="E-mail"
+        android:textColor="#000000"
+        android:textSize="20sp"></TextView>
+
+    <EditText
+        android:id="@+id/txtEmailLogin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtInfo2"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="E-mail Adresinizi Giriniz"
+        android:inputType="textEmailAddress"
+        android:textSize="30sp"></EditText>
+
+    <TextView
+        android:id="@+id/txtPasswordLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtEmailLogin1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="Şifre "
+        android:textColor="#000000"
+        android:textSize="20sp"></TextView>
+
+    <EditText
+        android:id="@+id/txtPasswordLogin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPasswordLogin"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint=".Şifrenizi Giriniz"
+        android:inputType="textPassword"
+        android:textSize="30sp"></EditText>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/txtEmailLogin1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginEnd="10dp"
+        android:background="#7E1A1A"
+
+
+        android:backgroundTint="#DF2222"
+        android:text="GİRİŞ YAP"
+        android:textSize="20sp"></Button>
+</RelativeLayout>
